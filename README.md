@@ -1,6 +1,7 @@
 # 1 qt_halcon_cv_convert
 data convert between halcon,qt,opencv,using C++.
 ```
+完成了cvimg,qimg,halconimg三者之间的转换，转换时间看下图。
 //    halcon_opencv
     Mat himg_to_cvimg(HObject &Hobj);
     HObject cvimg_to_himg(cv::Mat& pImage);
