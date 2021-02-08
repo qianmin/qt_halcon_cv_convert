@@ -1,5 +1,17 @@
 # 1 qt_halcon_cv_convert
-data convert between halcon,qt,opencv,using C++
+data convert between halcon,qt,opencv,using C++.
+```
+//    halcon_opencv
+    Mat himg_to_cvimg(HObject &Hobj);
+    HObject cvimg_to_himg(cv::Mat& pImage);
+
+//    halcon_to_qimg
+    bool himg_to_qimg(HalconCpp::HImage &from, QImage &to);
+
+//  opencv_qimg
+    QImage cvimg_to_qimg(const cv::Mat& mat);
+    Mat qimg_to_cvimg(QImage image);
+```
 
 
 # 2 a succesefull convert projects
